@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <header class="my-nav">
+        <div class="logo">Портфолио</div>
+            <ul class="links">
+                <li><a href="#hero">Башкы бет</a></li>
+                <li><a href="#about">Мен жөнүндө</a></li>
+                <li><a href="#skills">Жетишкендик</a></li>
+                <li><a href="#hobbies">Хоббилер</a></li>
+                <li><a href="#contact">Байланыш</a></li>
+            </ul>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-light p-5 text-center">
+            <h1>Салам, мен Байсал!</h1>
+            <p>Мен студентмин жана веб-сайт жасаганды үйрөнүп жатам.</p>
+            <button class="btn btn-primary" onclick="alert('Менин долбоорлорум төмөндө!')">Көрүп чыгуу</button>
+        </section>
+
+        
+        <section id="about" class="container my-5">
+            <h2>Мен жөнүндө маалымат</h2>
+            <p>Мен азыр программист болуу үчүн окуп жатам. Бул менин биринчи чоң практикалык иштеримдин бири. Мага HTML жана CSS менен иштөө абдан жагат.</p>
+            <img src="./2G7A8946.JPG" alt="Менин сүрөтүм" class="img-thumbnail">
+        </section>
+
+        
+        <section id="skills" class="container my-5">
+            <h2>Менин Жетишкендиктерим</h2>
+            <div class="my-grid">
+                <div class="card p-3">
+                    <h3>HTML</h3>
+                    <p>Сайттын скелетин жасай алам.</p>
+                </div>
+                <div class="card p-3">
+                    <h3>CSS</h3>
+                    <p>Сайтты кооздой алам.</p>
+                </div>
+                <div class="card p-3">
+                    <h3>Bootstrap</h3>
+                    <p>Даяр класстарды колдоном.</p>
+                </div>
+                <div class="card p-3">
+                    <h3>JS</h3>
+                    <p>Жөнөкөй логикаларды жазам.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="hobbies" class="container my-5">
+            <h2>Менин кызыгууларым жана хоббилерим</h2>
+            <p class="text-muted">Төмөнкү маалыматтар JavaScript массивинен алынып чыгарылды:</p>
+            <div id="hobbies-list" class="row"></div>
+        </section>
+
+
+        
+        <section id="contact" class="container my-5" style="max-width: 500px;">
+            <h2>Мага жазуу</h2>
+            <div id="msg" class="alert d-none"></div>
+            
+            <form id="my-form">
+                <div class="mb-3">
+                    <label>Атыңыз:</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label>Почтаңыз:</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label>Кат:</label>
+                    <textarea id="text" class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Жөнөтүү</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="bg-dark text-white p-3 text-center">
+        <p>&copy; 2026 Бурханов Байсал Болотбекович. Бардык укуктар корголгон</p>
+        <a href="https://github.com" class="text-white" target="_blank">Менин GitHub профилим</a>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
